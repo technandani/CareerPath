@@ -20,17 +20,19 @@ const Home = () => {
       <Scrollbar />
       
       {/* Sections wrapped in AnimationWrapper */}
-      <AnimationWrapper>
-        <ImageSlider />
-      </AnimationWrapper>
       
       <AnimationWrapper>
         <StatsSection />
       </AnimationWrapper>
-      
+     
       <AnimationWrapper>
         <CommunitySection />
       </AnimationWrapper>
+      
+      <AnimationWrapper>
+        <ImageSlider />
+      </AnimationWrapper>
+
       
       <AnimationWrapper>
         <CareerStages />
