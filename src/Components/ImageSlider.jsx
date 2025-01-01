@@ -32,7 +32,7 @@ const ImageSlider = () => {
 
   return (
    <>
-   <h2 style={{fontSize:'45px', textAlign:'center', color:'#111', fontWeight:'700', margin:'50px', marginTop:'100px'}}>
+   <h2 style={{fontSize:'45px', textAlign:'center', fontWeight:'700', margin:'50px', marginTop:'100px'}}>
     Explore Catageries
    </h2>
       <div className="image-slider-container" ref={containerRef}>

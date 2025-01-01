@@ -86,7 +86,7 @@ const Scrollbar = () => {
         overflowX: "auto",
         whiteSpace: "nowrap",
         padding: "20px",
-        height: "100px",
+        height: "150px",
         borderRadius: "10px",
       }}
     >

@@ -29,7 +29,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
     text-shadow: 2px 2px 5px #555;
     z-index: 10;
   }
@@ -50,17 +49,13 @@
   .hero-button {
     padding: 15px 30px;
     font-size: 1.2rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     animation: fadeIn 2.5s ease;
-    transition: background-color 0.3s;
   }
   
   .hero-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
   }
   
   /* Keyframes for animations */
@@ -125,7 +120,6 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 .main-heading {
   font-size: 35px;
   font-weight: bold;
-  color: #333;
   margin-bottom: 40px;
 }
 
@@ -139,10 +133,9 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 
 /* Individual card style */
 .card {
-  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  box-shadow: 0 0px 3px #eee;
+  width: 280px;
   text-align: center;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -165,14 +158,13 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 }
 
 .card-content h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .card-content p {
   font-size: 14px;
-  color: #666;
 }
 
 /* Responsive design for mobile */
@@ -194,7 +186,6 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 
 .testimonials {
   padding: 50px 20px;
-  /* background-color: #ffffff; */
 }
 
 .testimonial-cards {
@@ -207,10 +198,9 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 
 .testimonial-card {
   max-width: 400px;
-  background-color: #f2f2f2;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 3px #eee;
   text-align: center;
 }
 
@@ -222,7 +212,6 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 
 .testimonial-card h4 {
   font-size: 1.1rem;
-  color: #333;
   font-weight: bold;
 }
 
@@ -251,9 +240,8 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 }
 
 .feature-card {
-  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 3px #eee;
   text-align: center;
   padding: 20px;
   width: 300px;
@@ -274,7 +262,6 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 
 .feature-card p {
   font-size: 1rem;
-  color: #666;
 }
 
 
@@ -288,7 +275,6 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 .hero-container {
   padding: 40px;
   text-align: center;
-  background-color: #666;
 }
 
 .hero-content {
@@ -300,32 +286,29 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 .hero-heading {
   font-size: 36px;
   font-weight: bold;
-  color: #333;
   margin-bottom: 20px;
   animation: fadeInUp 1s ease-out;
 }
 
 .hero-subheading {
   font-size: 18px;
-  color: #555;
   margin-bottom: 30px;
   animation: fadeInUp 1.5s ease-out;
 }
 
 .cta-button {
   padding: 12px 24px;
-  background-color: #007bff;
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
 }
+
+
+
 
 /* Featured Blog Section */
 .feature-section {
@@ -337,9 +320,8 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 }
 
 .feature-card {
-  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 5px #eee;
   width: 300px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -362,7 +344,6 @@ background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba
 .feature-content h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
   text-align: center;
 }
 

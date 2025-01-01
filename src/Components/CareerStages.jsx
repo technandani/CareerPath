@@ -2,14 +2,12 @@ import React from "react";
 import "./HeroSection.css"; // Importing the CSS file for styles
 
 const data = [
-  { img: "images/14.png", text: "Software Engineering" },
   { img: "images/3.png", text: "Data Science" },
   { img: "images/4.jpg", text: "Web Development" },
-  { img: "images/8.jpeg", text: "Cloud Computing" },
+  { img: "images/14.png", text: "Cloud Computing" },
   { img: "images/5.png", text: "Machine Learning" },
   { img: "images/2.png", text: "Cybersecurity" },
-  { img: "images/13.jpg", text: "DevOps" },
-  { img: "images/1.png", text: "AI and Robotics" },
+  { img: "images/13.jpg", text: "AI and Robotics" },
   { img: "images/1.png", text: "Cyber Physical Systems" },
   { img: "images/8.jpeg", text: "Artificial Intelligence" },
 ];

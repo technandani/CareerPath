@@ -4,13 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
     padding: 50px 20px;
   }
   
   .feedback-heading {
     font-size: 3rem;
-    color: #333;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -24,13 +22,17 @@
   }
   
   .feedback-card {
-    background-color: #fff;
+    background: linear-gradient(90deg, rgba(0,21,52,1) 0%, rgba(1,43,89,1) 50%, rgba(0,29,61,1) 100%);
     border-radius: 10px;
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .feedback-card:hover {
@@ -47,8 +49,8 @@
   }
   
   .user-name {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 25px;
+    color: #eee;
     margin-bottom: 10px;
   }
   

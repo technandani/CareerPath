@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./HeroSection.css";
-import Scrollbar from "./Scrollbar";
-import CareerStages from "./CareerStages";
-// import FeaturesSection from "./FeaturesSection ";
-import DataSection from "./DataSection";
-import ImageSlider from "./ImageSlider";
-import FeedbackSection from "./FeaturesSection ";
 
 const content = [
   {
@@ -69,12 +63,6 @@ const HeroSection = () => {
           </div>
         ))}
       </div>
-      <Scrollbar />
-      {/* <FeaturesSection/> */}
-      <ImageSlider/>
-      <CareerStages/>
-      <DataSection/>
-      <FeedbackSection/>
     </>
   );
 };
