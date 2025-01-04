@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
 
@@ -19,9 +20,9 @@ const Navbar = () => {
     <>
       <header>
         <div className="navLeft">
-          <a href="/">
+          <NavLink to="/">
             <h1 className="logo">Career Path</h1>
-          </a>
+          </NavLink>
         </div>
         <div className="navRight">
           <div className="btns">
@@ -29,9 +30,9 @@ const Navbar = () => {
               Login In
             </button>
             <button className="btn" id="genBtn">
-              <a href="/chatBot">
+              <NavLink to="/chatbot">
                 Request Demo
-              </a>
+              </NavLink>
             </button>
           </div>
         </div>
