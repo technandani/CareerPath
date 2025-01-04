@@ -29,7 +29,7 @@ const Navbar = () => {
               Login In
             </button>
             <button className="btn" id="genBtn">
-              <a href="#" onClick={() => toggleModal("signup")}>
+              <a href="/chatbot">
                 Request Demo
               </a>
             </button>
