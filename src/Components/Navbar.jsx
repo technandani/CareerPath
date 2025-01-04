@@ -29,7 +29,7 @@ const Navbar = () => {
               Login In
             </button>
             <button className="btn" id="genBtn">
-              <a href="/chatbot">
+              <a href="/chatBot">
                 Request Demo
               </a>
             </button>
