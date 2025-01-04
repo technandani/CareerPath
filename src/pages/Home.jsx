@@ -10,7 +10,7 @@ import ImageSlider from "../Components/ImageSlider";
 import FeedbackSection from "../Components/FeaturesSection ";
 import CommunitySection from "../Components/CommunitySection";
 import StatsSection from "../Components/StatsSection";
-import AnimationWrapper from "../contaxt/AnimationWrapper.jsx"; // Import Animation Wrapper
+import AnimationWrapper from "../contaxt/AnimationWrapper.jsx";
 
 const Home = () => {
   return (
