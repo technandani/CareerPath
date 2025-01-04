@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./HeroSection.css";
 
 const content = [
@@ -59,6 +60,9 @@ const HeroSection = () => {
             <div className="hero-overlay">
               <h1 className="hero-title">{item.title}</h1>
               <p className="hero-subtitle">{item.paragraph}</p>
+              <button className="" style={{padding:'8px 25px', fontSize:'20px', fontWeight:'400', color:'#001a2c', backgroundColor:'#fff', boxShadow:'#001a2c 0 0 5px', borderRadius:'10px'}}><NavLink to="/chatbot">
+              <i class="fa-solid fa-robot p-2"></i>Assistance
+              </NavLink></button>
             </div>
           </div>
         ))}
