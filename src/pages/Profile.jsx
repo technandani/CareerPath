@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Components/common/Navbar";
-import InfoCard from "../components/profile/InfoCard";
+import InfoCard from "../Components/profile/InfoCard";
 import TabSwitcher from "../Components/profile/TabSwitcher";
 import FarmerPost from "../Components/profile/FarmerPost";
 import styled from "styled-components";
