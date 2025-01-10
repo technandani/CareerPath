@@ -1,10 +1,59 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./app/store.js";
+import { QuizProvider } from "./context/QuizContext";
+import "./index.css";
+import App from "./App.jsx";
+import "./App.css";
+import Home from "./pages/Home";
+import Landing from "./pages/Landing";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import Chatbot from "./pages/Chatbot";
+import Profile from "./pages/Profile";
+import Settings from "./pages/Settings";
+import Quiz from "./pages/Quiz";
+import QuizDetailPage from "./pages/QuizDetailPage";
+import Job from "./pages/Job";
+import CareerSuggestions from "./pages/CareerSuggestions";
+import SkillTracker from "./pages/SkillTracker";
+import LeaderboardPage from "./pages/LeaderboardPage.jsx";
+import Logout from "./pages/Logout.jsx";
 
-createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route path="/" element={<Landing />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/chatbot" element={<Chatbot />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/quiz" element={<Quiz />} />
+      <Route path="/quiz/:id" element={<QuizDetailPage />} />
+      <Route path="/job" element={<Job />} />
+      <Route path="/careersuggessions" element={<CareerSuggestions />} />
+      <Route path="/skilltracker" element={<SkillTracker />} />
+      <Route path="/leaderboard" element={<LeaderboardPage />} />
+      <Route path="/logout" element={<Logout />} />
+    </Route>
+  )
+);
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <QuizProvider>
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </QuizProvider>
+  </StrictMode>
+);

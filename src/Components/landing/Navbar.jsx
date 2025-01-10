@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import SignUp from "../pages/SignUp";
-import SignIn from "../pages/SignIn";
+import SignUp from "../../pages/SignUp";
+import SignIn from "../../pages/SignIn";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
               Login In
             </button>
             <button className="btn" id="genBtn">
-              <NavLink to="/chatbot">
+              <NavLink to="/home">
                 Request Demo
               </NavLink>
             </button>

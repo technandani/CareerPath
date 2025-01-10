@@ -1,54 +1,16 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
-import HeroSection from "../Components/HeroSection";
-import Footer from "../Components/Footer";
-import Scrollbar from "../Components/Scrollbar";
-import CareerStages from "../Components/CareerStages";
-// import FeaturesSection from "./FeaturesSection ";
-import DataSection from "../Components/DataSection";
-import ImageSlider from "../Components/ImageSlider";
-import FeedbackSection from "../Components/FeaturesSection ";
-import CommunitySection from "../Components/CommunitySection";
-import StatsSection from "../Components/StatsSection";
-import AnimationWrapper from "../contaxt/AnimationWrapper.jsx";
+import React from 'react'
+import Navbar from '../Components/common/Navbar'
+import Dashboard from '../Components/Home/Dashboard'
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <Scrollbar />
-      
-      {/* Sections wrapped in AnimationWrapper */}
-      
-      <AnimationWrapper>
-        <StatsSection />
-      </AnimationWrapper>
-     
-      <AnimationWrapper>
-        <CommunitySection />
-      </AnimationWrapper>
-      
-      <AnimationWrapper>
-        <ImageSlider />
-      </AnimationWrapper>
-
-      
-      <AnimationWrapper>
-        <CareerStages />
-      </AnimationWrapper>
-      
-      <AnimationWrapper>
-        <DataSection />
-      </AnimationWrapper>
-      
-      <AnimationWrapper>
-        <FeedbackSection />
-      </AnimationWrapper>
-      
-      <Footer />
+      <div className="w-full h-full overflow-y-scroll">
+        <Navbar/>
+        <Dashboard/>
+      </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

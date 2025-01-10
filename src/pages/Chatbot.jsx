@@ -5,7 +5,7 @@ const Chatbot = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-50 via-pink-50 to-yellow-50" style={{background: "linear-gradient(90deg, rgba(0,21,52,1) 0%, #012246 50%, rgba(0,29,61,1) 100%)"}}>
       {/* Header */}
       <div className="absolute top-4 left-4 flex items-center">
-      <a href="/">
+      <a href="/home">
             <h1 className="logo">Career Path</h1>
           </a>
       </div>
