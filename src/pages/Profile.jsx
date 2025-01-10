@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/common/Navbar";
+import Navbar from "../Components/common/Navbar";
 import InfoCard from "../components/profile/InfoCard";
-import TabSwitcher from "../components/profile/TabSwitcher";
-import FarmerPost from "../components/profile/FarmerPost";
+import TabSwitcher from "../Components/profile/TabSwitcher";
+import FarmerPost from "../Components/profile/FarmerPost";
 import styled from "styled-components";
 
 const ProfileWrapper = styled.div``;
