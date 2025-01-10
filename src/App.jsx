@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "./components/Header/Header";
+import Header from "./Components/Header/Header";
 import { useDispatch, useSelector } from "react-redux";
 import { checkMenu } from "./features/sliderSlice";
 

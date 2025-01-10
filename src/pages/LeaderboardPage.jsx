@@ -1,5 +1,5 @@
 import React from "react";
-import Leaderboard from "../components/leaderboard/Leaderboard";
+import Leaderboard from "../Components/leaderboard/Leaderboard";
 import Navbar from "../Components/common/Navbar";
 const users = [
   { name: "Bharath Kumar", score: 2980, stars: 5, category: "weekly", avatar: "/images/user8.jpeg" },
