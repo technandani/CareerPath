@@ -16,14 +16,14 @@ const Header = () => {
             </div>
             <div className="w-full h-[90%] overflow-y-hidden text-white text-lg">
             <MenuOption link="/home" icon={<i className="text-xl fa-solid fa-house"></i>} text="Home" />
-                <MenuOption link="/quiz" icon={<i className="text-xl fa-solid fa-building-columns"></i>} text="Quiz" />
-                <MenuOption link="/leaderboard" icon={<i className="text-xl fa-solid fa-person-digging"></i>} text="Leaderboard" />
-                <MenuOption link="/skillTracker" icon={<i className="text-xl fa-solid fa-cloud-sun"></i>} text="Skill Tracker" />
-                <MenuOption link="/careersuggessions" icon={<i className="text-xl fa-regular fa-clipboard"></i>} text="Career Suggestions" />
-                <MenuOption link="/job" icon={<i className="text-xl fa-brands fa-pagelines"></i>} text="Job" />
+                <MenuOption link="/quiz" icon={<i className="fa-solid fa-brain"></i>} text="Quiz" />
+                <MenuOption link="/leaderboard" icon={<i className="fa-solid fa-chart-column"></i>} text="Leaderboard" />
+                <MenuOption link="/skillTracker" icon={<i className="fa-solid fa-laptop-file"></i>} text="Skill Tracker" />
+                <MenuOption link="/careersuggessions" icon={<i className="fa-solid fa-book-open"></i>} text="Career Suggestions" />
+                <MenuOption link="/job" icon={<i className="fa-solid fa-briefcase"></i>} text="Job" />
                 <MenuOption link="/profile" icon={<i className="text-xl fa fa-user"></i>} text="Profile" />
                 <MenuOption link="/settings" icon={<i className="text-xl fa-solid fa-gear"></i>} text="Settings" />
-                <MenuOption link="/logout" icon={<i className="text-xl fa-solid fa-gear"></i>} text="Logout" />
+                <MenuOption link="/logout" icon={<i className="fa-solid fa-arrow-right-from-bracket"></i>} text="Logout" />
             </div>
         </header>
     )
