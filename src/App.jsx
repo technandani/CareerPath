@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation, useNavigate  } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import { useDispatch, useSelector } from "react-redux";
 import { checkMenu } from "./features/sliderSlice";
@@ -8,12 +8,16 @@ const App = () => {
   const dispatch = useDispatch();
   const location = useLocation();
 
-  // Function to toggle sidebar
+  const navigate = useNavigate(); 
+
+  const handleNavigate = () => {
+    navigate("/chatbot");
+  };
+
   const handleToggle = () => {
     dispatch(checkMenu(!isCompressed));
   };
 
-  // Check if the current route is the landing page
   const isLandingPage = ["/", "/chatbot"].includes(location.pathname);
 
   return (
@@ -50,9 +54,13 @@ const App = () => {
       </main>
       {/* Render the chatbot button only if not on the landing page */}
         {!isLandingPage && (
-        <button className="fixed bottom-8 right-8 bg-transprent text-white rounded-full p-2 shadow-lg z-50 h-20 w-20">
-          <a href="/chatbot"><img src="images/chatBot.png" className="h-full w-full" alt="" /></a>
-        </button>
+        <button
+        onClick={handleNavigate} // Call navigate on click
+        className="fixed bottom-8 right-8 bg-transparent text-white rounded-full p-2 shadow-lg z-50 h-20 w-20"
+      >
+        <img src="images/chatBot.png" className="h-full w-full" alt="Chatbot" />
+      </button>
+  
       )}
 
       
