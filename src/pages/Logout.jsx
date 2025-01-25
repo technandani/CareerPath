@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
-  return (
-    <>
-      
-    </>
-  )
-}
+  const navigate = useNavigate();
+  const LogoutUser = async () => {
+    try {
+      Cookies.remove("uid");
+      navigate("/");
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
+  };
+  LogoutUser();
+  return <></>;
+};
 
-export default Logout
+export default Logout;

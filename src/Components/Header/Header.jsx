@@ -23,7 +23,7 @@ const Header = () => {
                 <MenuOption link="/job" icon={<i className="fa-solid fa-briefcase"></i>} text="Job" />
                 <MenuOption link="/profile" icon={<i className="text-xl fa fa-user"></i>} text="Profile" />
                 <MenuOption link="/settings" icon={<i className="text-xl fa-solid fa-gear"></i>} text="Settings" />
-                <MenuOption link="/logout" icon={<i className="fa-solid fa-arrow-right-from-bracket"></i>} text="Logout" />
+                <MenuOption link="/" icon={<i className="fa-solid fa-arrow-right-from-bracket"></i>} text="Logout" />
             </div>
         </header>
     )

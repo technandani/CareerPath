@@ -1,16 +1,40 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 const SignUp = ({ onSwitch }) => {
   const [showPassword, setShowPassword] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handelSubmit = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/user/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            password,
+          }),
+        });
+        alert('Registration successful, Please Login!');
+        window.location.reload();
+      } catch (error) {
+        console.log(error);
+      }
+  }
 
   return (
     <div className="flex items-center justify-center bg-cover bg-center">
       <div className="border border-white/20 rounded-lg p-8 w-[550px] text-center">
         <h2 className="text-2xl font-bold mb-6">Sign Up</h2>
-        <form>
           <div className="mb-4">
             <input
               type="text"
+              value={name}
+              onChange={(e) => {setName(e.target.value)}}
               className="w-full px-4 py-2 rounded-md border border-gray-800 bg-transparent text-blue-200"
               placeholder="Name"
               style={{ border: "solid 1px #fff" }}
@@ -19,6 +43,8 @@ const SignUp = ({ onSwitch }) => {
           <div className="mb-4">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2 rounded-md border border-gray-800 bg-transparent text-blue-200"
               placeholder="Email"
               style={{ border: "solid 1px #fff" }}
@@ -27,6 +53,8 @@ const SignUp = ({ onSwitch }) => {
           <div className="mb-4 relative">
             <input
               type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               className="w-full px-4 py-2 rounded-md border border-gray-800 bg-transparent text-blue-200"
               placeholder="Password"
               style={{ border: "solid 1px #fff" }}
@@ -42,7 +70,7 @@ const SignUp = ({ onSwitch }) => {
             </label>
           </div>
           <button
-            type="submit"
+            onClick={handelSubmit}
             className="w-full py-2 mt-4 bg-blue-300 text-white font-semibold rounded-md hover:bg-blue-400 transition duration-200"
           >
             Sign Up
@@ -68,7 +96,6 @@ const SignUp = ({ onSwitch }) => {
               Login
             </button>
           </p>
-        </form>
       </div>
     </div>
   );

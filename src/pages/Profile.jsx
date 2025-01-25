@@ -9,7 +9,7 @@ const ProfileWrapper = styled.div``;
 
 const Profile = () => {
   return (
-    <div className="w-full h-full overflow-y-scroll">
+    <div className="w-full h-full overflow-y-scroll bg-[#000814] text-[#fff] ">
       <Navbar />
       <ProfileWrapper className="min-h-screen flex flex-col">
         <InfoCard />

@@ -8,7 +8,7 @@ const Quiz = () => {
   const { quizzes } = useQuizContext();
 
   return (
-    <div className="w-full h-full overflow-y-scroll">
+    <div className="w-full h-full overflow-y-scroll bg-[#000814] text-[#fff]">
       <Navbar />
       <QuizHeader />
       <QuizList quizzes={quizzes} />

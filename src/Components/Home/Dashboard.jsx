@@ -3,9 +3,10 @@ import HeroSection from "./HeroSection";
 import SkillTracker from "./SkillTracker";
 import LearningPath from "./LearningPath";
 import Gamification from "./Gamification";
+import Cookies from "js-cookie";
 
 const Dashboard = () => {
-  const userName = "Nandani";
+  const userName =Cookies.get("loggedInUser");
   const profilePic = "images/user.jpg"; // Replace with dynamic URL
   const skills = [
     { name: "React", progress: 70 },

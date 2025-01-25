@@ -11,7 +11,7 @@ const QuizDetailsPage = () => {
   const quiz = quizzes.find((quiz) => quiz.id === parseInt(id));
 
   return (
-    <div className="w-full h-full overflow-y-scroll">
+    <div className="w-full h-full overflow-y-scroll bg-[#000814] text-[#fff] ">
       <Navbar />
       <div className="p-8">
         <QuizAttempt quiz={quiz} />

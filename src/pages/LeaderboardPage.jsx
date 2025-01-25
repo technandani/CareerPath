@@ -17,7 +17,7 @@ const users = [
 
 const LeaderboardPage = () => {
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full overflow-hidden bg-[#000814] text-[#fff] ">
       <Navbar/>
        <Leaderboard users={users} />
     </div>
